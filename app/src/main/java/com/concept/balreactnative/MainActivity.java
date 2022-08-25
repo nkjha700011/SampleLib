@@ -26,8 +26,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView status=findViewById(R.id.status);
         try {
-            inputStream=new FileInputStream(new File("infilename"));
-            outputStream=new FileOutputStream(new File("outfilename"));
+            //this is only for the sake of testing not actual case
+            String ip="ip.txt";
+            String op="op.txt";
+            inputStream=new FileInputStream(new File(getDataDir().getAbsolutePath()+"/"+ip));
+            outputStream=new FileOutputStream(new File(getDataDir().getAbsolutePath()+"/"+op));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

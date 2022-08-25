@@ -19,3 +19,21 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+
+-keepclassmembers class com.concept.samplelibrary.BalDongleLib {
+   public *;
+}
+# Uncomment this to preserve the line number information for
+# debugging stack traces.
+#-keepattributes SourceFile,LineNumberTable
+# If you keep the line number information, uncomment this to
+# hide the original source file name.
+# Below is an example of mentioning a class that you don't want to be obfuscated
+-keep class com.concept.samplelibrary.BalDongleLib { *; }
+# The below are suggestions to be kept by ProGuard.
+-keepattributes Signature
+-keepattributes Exceptions
+-keepattributes *Annotation*
+-keepattributes EnclosingMethod
+-keepattributes LineNumberTable,SourceFile
