@@ -18,7 +18,7 @@ public class BalDongleLib {
         return inputStream!=null && outputStream!=null;
     }
     public String getVin(){
-        return "MDXNTF000012DERTD";
+        return "MDXXXXXXXXXXXXVIN";
     }
     public void writeVin(String Vin){
 
